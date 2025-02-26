@@ -1,5 +1,5 @@
 # Tool-Upgrades
-My Tool Upgrades Subnautica mod. Requires Nautilus. Not ready for release. While technically ready, it only contains Literal Seaglide Upgrades. I plan to add much much more.
+My Tool Upgrades Subnautica mod. Requires Nautilus. While technically ready, it only contains Literal Seaglide Upgrades. I plan to add much much more.
 ## I can Promise this
 Almost ALL tools will have upgrades by the time this is released.
 # Release with only current set?
