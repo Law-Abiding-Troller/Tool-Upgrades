@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UpgradesLIB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.9.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.9.0+2a3796a5ae0bfcb70b55138f599c120251c99cb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.9.0+3bbdeb25a8cb6e09499a85a60d11b3e0cd5a9ead")]
 [assembly: System.Reflection.AssemblyProductAttribute("UpgradesLIB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UpgradesLIB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.9.0.0")]
