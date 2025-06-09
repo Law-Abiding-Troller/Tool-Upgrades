@@ -134,6 +134,19 @@
           }
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
+        }
+      },
       "PolySharp/1.13.1": {
         "type": "package",
         "build": {
@@ -191,6 +204,25 @@
           "lib/net472/Unity.TextMeshPro.dll": {},
           "lib/net472/Unity.Timeline.dll": {},
           "lib/net472/UnityEngine.UI.dll": {}
+        }
+      },
+      "Subnautica.Nautilus/1.0.0-pre.37": {
+        "type": "package",
+        "dependencies": {
+          "BepInEx.Core": "5.4.21",
+          "Newtonsoft.Json": "12.0.3",
+          "Subnautica.GameLibs": "71288.0.0-r.0",
+          "UnityEngine.Modules": "2019.4.36"
+        },
+        "compile": {
+          "lib/net472/Nautilus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/Nautilus.dll": {
+            "related": ".xml"
+          }
         }
       },
       "UnityEngine.Modules/2019.4.36": {
@@ -794,6 +826,37 @@
         "monomod.utils.nuspec"
       ]
     },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "PolySharp/1.13.1": {
       "sha512": "N7aUpH9dBF2/WsXtAJnFkVI38mc7j6VNJDuDbFtCiSkQE/i+KSD20CyM5SMYVvGKyhntrUF/KkpwnJR0ec4Xyg==",
       "type": "package",
@@ -864,6 +927,20 @@
         "lib/netstandard2.0/UnityEngine.UI.dll",
         "subnautica.gamelibs.71288.0.0-r.0.nupkg.sha512",
         "subnautica.gamelibs.nuspec"
+      ]
+    },
+    "Subnautica.Nautilus/1.0.0-pre.37": {
+      "sha512": "WxQ85GOK+TW8hXySMGsRE6BBYN9r3cNlKFBhgA430IRL5GNfYFuwXykwslkMXP41r9ZzJ1YWI08lHbGepTdPOw==",
+      "type": "package",
+      "path": "subnautica.nautilus/1.0.0-pre.37",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/Nautilus.dll",
+        "lib/net472/Nautilus.xml",
+        "logo.png",
+        "subnautica.nautilus.1.0.0-pre.37.nupkg.sha512",
+        "subnautica.nautilus.nuspec"
       ]
     },
     "UnityEngine.Modules/2019.4.36": {
@@ -1065,6 +1142,7 @@
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.2",
       "PolySharp >= 1.13.1",
       "Subnautica.GameLibs >= 71288.0.0-r.0",
+      "Subnautica.Nautilus >= 1.0.0-pre.37",
       "UnityEngine.Modules >= 2019.4.36"
     ]
   },
@@ -1075,11 +1153,11 @@
   "project": {
     "version": "0.9.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Colt\\RiderProjects\\ToolsUpgradesLIB\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
+      "projectUniqueName": "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
       "projectName": "UpgradesLIB",
-      "projectPath": "C:\\Users\\Colt\\RiderProjects\\ToolsUpgradesLIB\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
+      "projectPath": "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
       "packagesPath": "C:\\Users\\Colt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Colt\\RiderProjects\\ToolsUpgradesLIB\\ToolsUpgradesLIB\\obj\\",
+      "outputPath": "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1146,6 +1224,10 @@
           "Subnautica.GameLibs": {
             "target": "Package",
             "version": "[71288.0.0-r.0, )"
+          },
+          "Subnautica.Nautilus": {
+            "target": "Package",
+            "version": "[1.0.0-pre.37, )"
           },
           "UnityEngine.Modules": {
             "include": "Compile",

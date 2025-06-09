@@ -20,6 +20,7 @@
         <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all"/>
         <PackageReference Include="BepInEx.Core" Version="5.4.21"/>
         <PackageReference Include="BepInEx.PluginInfoProps" Version="1.1.0"/>
+        <PackageReference Include="Subnautica.Nautilus" Version="1.0.0-pre.37" />
         <PackageReference Include="UnityEngine.Modules" Version="2019.4.36" IncludeAssets="compile"/>
         <PackageReference Include="Subnautica.GameLibs" Version="71288.0.0-r.0"/>
         <PackageReference Include="PolySharp" Version="1.13.1"/>
@@ -31,9 +32,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Reference Include="Nautilus">
-        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll</HintPath>
-      </Reference>
       <Reference Include="UnityEngine.CoreModule">
         <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       </Reference>

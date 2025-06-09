@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aWusZezt6VI=",
+  "dgSpecHash": "5sNO3UvcuSw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Colt\\RiderProjects\\ToolsUpgradesLIB\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
+  "projectFilePath": "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Colt\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\Colt\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",
@@ -14,8 +14,10 @@
     "C:\\Users\\Colt\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
     "C:\\Users\\Colt\\.nuget\\packages\\monomod.runtimedetour\\21.12.13.1\\monomod.runtimedetour.21.12.13.1.nupkg.sha512",
     "C:\\Users\\Colt\\.nuget\\packages\\monomod.utils\\21.12.13.1\\monomod.utils.21.12.13.1.nupkg.sha512",
+    "C:\\Users\\Colt\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Colt\\.nuget\\packages\\polysharp\\1.13.1\\polysharp.1.13.1.nupkg.sha512",
     "C:\\Users\\Colt\\.nuget\\packages\\subnautica.gamelibs\\71288.0.0-r.0\\subnautica.gamelibs.71288.0.0-r.0.nupkg.sha512",
+    "C:\\Users\\Colt\\.nuget\\packages\\subnautica.nautilus\\1.0.0-pre.37\\subnautica.nautilus.1.0.0-pre.37.nupkg.sha512",
     "C:\\Users\\Colt\\.nuget\\packages\\unityengine.modules\\2019.4.36\\unityengine.modules.2019.4.36.nupkg.sha512"
   ],
   "logs": []
