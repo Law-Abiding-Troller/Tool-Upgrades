@@ -19,6 +19,7 @@ namespace UpgradesLIB; // remember link: https://github.com/tinyhoot/Nautilus/bl
  * Fields with AssertNotNull attribute
  * Fields not public (that don't have the NonSerialized attribute)
  * Public properties
+ * "'I don't really get why it exists, it just decreases the chance of a collision from like 9.399613e-55% to like 8.835272e-111%, both are very small numbers' - Lee23"
  * Todo list:
  */
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
