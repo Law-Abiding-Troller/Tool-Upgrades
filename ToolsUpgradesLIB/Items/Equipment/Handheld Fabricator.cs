@@ -20,12 +20,20 @@ public class Handheldprefab
                 "The hand held fabricator for Upgrades that are specific to tools and equipment.")
             .WithIcon(SpriteManager.Get(TechType.Fabricator));
         Handheldfab = new CustomPrefab(HandheldfabInfo);
-        HandheldfabGadget = Handheldfab.CreateFabricator(out HandheldfabTreeType)
-            .AddTabNode("Equipment", "Equipment", SpriteManager.Get(TechType.Fabricator))
-            .AddTabNode("Tools", "Tools", SpriteManager.Get(TechType.Fabricator))
-            .AddCraftNode(HandheldfabInfo.TechType, "Tools")
-            .AddCraftNode(HandheldfabInfo.TechType, "Equipment");
-            
+        if (Config.debugMode)
+        {
+            HandheldfabGadget = Handheldfab.CreateFabricator(out HandheldfabTreeType)
+                .AddTabNode("Equipment", "Equipment", SpriteManager.Get(TechType.Fabricator))
+                .AddTabNode("Tools", "Tools", SpriteManager.Get(TechType.Fabricator))
+                .AddCraftNode(HandheldfabInfo.TechType, "Tools")
+                .AddCraftNode(HandheldfabInfo.TechType, "Equipment");
+        }
+        else
+        {
+            HandheldfabGadget = Handheldfab.CreateFabricator(out HandheldfabTreeType)
+                .AddTabNode("Equipment", "Equipment", SpriteManager.Get(TechType.Fabricator))
+                .AddTabNode("Tools", "Tools", SpriteManager.Get(TechType.Fabricator));
+        }
         var clone = new FabricatorTemplate(HandheldfabInfo, HandheldfabTreeType)
         {
             FabricatorModel = FabricatorTemplate.Model.Fabricator,
