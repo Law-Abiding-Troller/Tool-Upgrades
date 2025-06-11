@@ -45,7 +45,7 @@ This "mod" is a library mod for the other mods (such as Literal Seaglide Upgrade
 7. Done. Can Launch Subnautica now.
 
 ## What This Mod Adds
-A hand held fabricator specifically for tools and nothing else. Found in the Fabricator under `Personal`,`Tools`.
+A hand held fabricator specifically for tools and nothing else. Found in the Fabricator under `Personal`,`Tools`. Please note that while the fabricator is hand held, it will not have charge unless near a base. I have not tested  if it will work inside of a base or without a solar panel or anything that generates power outside the base. I know the Power Transmitter will work.
 
 ## What Each Setting is:
  - Enable Debug Mode? (requires restart): Click to have a checkmark which you can test for bugs.
