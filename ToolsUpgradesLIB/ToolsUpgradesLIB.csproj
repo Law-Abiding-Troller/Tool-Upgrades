@@ -38,6 +38,6 @@
     </ItemGroup>
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="copy /Y &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\ToolsUpgradesLIB&quot;&#xA;copy /Y &quot;C:\Users\Colt\RiderProjects\ToolsUpgradesLIB\ToolsUpgradesLIB\bin\Debug\net472\UpgradesLIB.pdb&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\ToolsUpgradesLIB&quot;&#xA;" />
+      <Exec Command="copy /Y &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\ToolsUpgradesLIB&quot;&#xA;copy /Y &quot;C:\Users\Colt\Documents\Tool-Upgrades\ToolsUpgradesLIB\bin\Debug\net472\UpgradesLIB.pdb&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\ToolsUpgradesLIB&quot;&#xA;" />
     </Target>
 </Project>
