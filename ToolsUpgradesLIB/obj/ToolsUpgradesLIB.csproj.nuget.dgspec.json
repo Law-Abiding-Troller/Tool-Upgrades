@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj": {}
+    "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj": {
+    "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
+        "projectUniqueName": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
         "projectName": "UpgradesLIB",
-        "projectPath": "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\ToolsUpgradesLIB.csproj",
-        "packagesPath": "C:\\Users\\Colt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Colt\\Documents\\Tool-Upgrades\\ToolsUpgradesLIB\\obj\\",
+        "projectPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
+        "packagesPath": "/Users/coltwiedermann/.nuget/packages/",
+        "outputPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Colt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/coltwiedermann/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net472"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.bepinex.dev/v3/index.json": {}
@@ -47,39 +40,46 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
             "BepInEx.Analyzers": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.*, )"
             },
             "BepInEx.Core": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[5.4.21, )"
             },
             "BepInEx.PluginInfoProps": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[1.1.0, )"
             },
             "Microsoft.NETFramework.ReferenceAssemblies": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.0.2, )"
             },
             "PolySharp": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[1.13.1, )"
             },
             "Subnautica.GameLibs": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[71288.0.0-r.0, )"
             },
             "Subnautica.Nautilus": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[1.0.0-pre.37, )"
             },
@@ -89,7 +89,7 @@
               "version": "[2019.4.36, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }

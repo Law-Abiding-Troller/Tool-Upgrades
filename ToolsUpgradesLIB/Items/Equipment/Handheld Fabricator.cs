@@ -49,7 +49,11 @@ public class Handheldprefab
                     TechType.Battery,
                     TechType.PrecursorIonBattery
                 };
-                prefab.AddComponent<PowerRelay>();
+                prefab.AddComponent<HandHeldRelay>().dontConnectToRelays = true;
+                PrefabUtils.AddEnergyMixin<HandHeldBatterySource>(prefab, 
+                    "'I don't really get why it exists, it just decreases the chance of a collision from like 9.399613e-55% to like 8.835272e-111%, both are very small numbers' - Lee23", 
+                    TechType.Battery, compatbats);
+
             }
         };
         Handheldfab.SetGameObject(clone);
@@ -82,15 +86,48 @@ public class Handheldprefab
 
 public class HandHeldFabricator : PlayerTool
 {
+    public Fabricator fab;
+    public PowerRelay relay;
+    public HandHeldBatterySource battery;
+    public override void Awake()
+    {
+        fab = gameObject.GetComponent<Fabricator>();
+        relay = gameObject.GetComponent<PowerRelay>();
+        fab.powerRelay = relay;
+        battery = gameObject.GetComponent<HandHeldBatterySource>();
+        battery.connectedRelay = relay;
+        relay.AddInboundPower(battery);
+    }
     public override bool OnRightHandDown()
     {
-        if (Inventory.main.GetHeldTool() is HandHeldFabricator && Inventory.main is not null)
-        {
-            Plugin.HeldTool = Inventory.main.GetHeldTool().GetComponent<Fabricator>();
-            uGUI.main.craftingMenu.Open(Handheldprefab.HandheldfabGadget.CraftTreeType, Plugin.HeldTool);
+        Plugin.Logger.LogDebug($"OnRightHandDown: {relay.inboundPowerSources.Count},{relay.GetPower()}, {battery.connectedRelay}, {battery.enabled}, {battery.charge}");
+            fab.opened = true;
+            uGUI.main.craftingMenu.Open(Handheldprefab.HandheldfabGadget.CraftTreeType, fab);
             return true;
-        }
+    }
+}
 
-        return false;
+public class HandHeldRelay : PowerRelay
+{
+    public override void Start()
+    {
+        InvokeRepeating("UpdatePowerState", Random.value, 0.5f);
+        lastCanConnect = CanMakeConnection();
+        StartCoroutine(UpdateConnectionAsync());
+        UpdatePowerState();
+        if (WaitScreen.IsWaiting)
+        {
+            lastPowered = isPowered = true;
+            powerStatus = PowerSystem.Status.Normal;
+        }
+    }
+}
+
+public class HandHeldBatterySource : BatterySource
+{
+    public override void Start()
+    {
+        RestoreBattery();
+        
     }
 }

@@ -34,7 +34,7 @@ public class Plugin : BaseUnityPlugin
     
     private static Assembly Assembly { get; } = Assembly.GetExecutingAssembly();
     
-    public static IEnumerator CreateUpgradesContainer(TechType tech, string storageRootName, string storageRootClassId, int width, int height, TechType[] allowedTechTypes = null, bool preventDeconstuctionIfNotEmpty = false)
+    public static IEnumerator CreateUpgradesContainer(TechType tech, string storageRootName, string storageRootClassId, int width, int height, bool preventDeconstuctionIfNotEmpty = false)
     {
         Logger.LogInfo($"Coroutine started for CreateUpgradesContainer(TechType, string, string, int, int, TechType[], bool)!");//log EVERYTHING
         Logger.LogInfo($"Fetching {tech}'s Prefab...");
@@ -42,8 +42,14 @@ public class Plugin : BaseUnityPlugin
         yield return task;//wait for prefab to finish
         Logger.LogInfo("Prefab Fetched Successfully!");
         GameObject prefab = task.GetResult();//get the prefab
+        Logger.LogDebug($"{storageRootName},{storageRootClassId},{width},{height},{preventDeconstuctionIfNotEmpty}");
         Logger.LogInfo($"The prefab for {tech} is {prefab}. Creating container for the prefab.");//log it because why not
-        PrefabUtils.AddStorageContainer(prefab, storageRootName, storageRootClassId, width, height, preventDeconstuctionIfNotEmpty).container.SetAllowedTechTypes(allowedTechTypes);//use nautilus's method to create the storage container
+        PrefabUtils.AddStorageContainer(prefab, 
+        storageRootName, 
+            storageRootClassId, 
+            width, 
+            height, 
+            preventDeconstuctionIfNotEmpty); //use nautilus's method to create the storage container
         Logger.LogInfo("Storage Container Added. If it opens, the task was successful");//log it
     }
     public static TechGroup toolupgrademodules = EnumHandler.AddEntry<TechGroup>("ToolsUpgrades")
@@ -80,7 +86,6 @@ public class Plugin : BaseUnityPlugin
 
     public int timer = 0;
     public bool Initialreset = false;
-    public static Fabricator HeldTool;
     private void Update()
     {
         timer++;
