@@ -84,41 +84,6 @@ public class Plugin : BaseUnityPlugin
         Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_NAME} is loaded! Loading other plugins." );
     }
 
-    public int timer = 0;
-    public bool Initialreset = false;
-    private void Update()
-    {
-        timer++;
-        if (timer == 5000 && !Initialreset)
-        {
-            timer = 0;
-        }
-
-        if (ConfigOptions.DebugMode)
-        {
-            Logger.LogDebug(timer.ToString());
-        }
-        if (timer == 500)
-        {
-            timer = 0;
-        }
-        
-        if (Inventory.main is null)
-        {
-            if (timer == 0)
-            {
-                Logger.LogError("No Inventory Loaded!" );
-            }
-            return;
-        }
-        
-        if (Inventory.main.GetHeldTool() is HandHeldFabricator)
-        { 
-            Inventory.main.GetHeldTool().transform.localScale = Handheldprefab.PostScaleValue;
-        }
-        
-    }
-
     private void InitializePrefabs()
     {
         Logger.LogInfo($"Initializing prefabs: " );

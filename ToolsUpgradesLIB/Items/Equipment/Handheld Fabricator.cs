@@ -105,6 +105,11 @@ public class HandHeldFabricator : PlayerTool
             uGUI.main.craftingMenu.Open(Handheldprefab.HandheldfabGadget.CraftTreeType, fab);
             return true;
     }
+
+    public void Update()
+    {
+        gameObject.transform.localScale = Handheldprefab.PostScaleValue;
+    }
 }
 
 public class HandHeldRelay : PowerRelay
