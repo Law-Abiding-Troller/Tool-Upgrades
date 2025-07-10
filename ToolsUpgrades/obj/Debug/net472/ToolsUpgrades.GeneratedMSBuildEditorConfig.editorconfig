@@ -1,6 +1,6 @@
 is_global = true
-build_property.RootNamespace = ToolsUpgradesLIB
-build_property.ProjectDir = /Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/
+build_property.RootNamespace = ToolsUpgrades
+build_property.ProjectDir = /Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

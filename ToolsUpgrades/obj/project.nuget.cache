@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SDA2Ymt2Q74=",
+  "dgSpecHash": "bHL0KY95Yvo=",
   "success": true,
-  "projectFilePath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
+  "projectFilePath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/ToolsUpgrades.csproj",
   "expectedPackageFiles": [
     "/Users/coltwiedermann/.nuget/packages/bepinex.analyzers/1.0.8/bepinex.analyzers.1.0.8.nupkg.sha512",
     "/Users/coltwiedermann/.nuget/packages/bepinex.baselib/5.4.20/bepinex.baselib.5.4.20.nupkg.sha512",
@@ -17,7 +17,7 @@
     "/Users/coltwiedermann/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/coltwiedermann/.nuget/packages/polysharp/1.13.1/polysharp.1.13.1.nupkg.sha512",
     "/Users/coltwiedermann/.nuget/packages/subnautica.gamelibs/71288.0.0-r.0/subnautica.gamelibs.71288.0.0-r.0.nupkg.sha512",
-    "/Users/coltwiedermann/.nuget/packages/subnautica.nautilus/1.0.0-pre.37/subnautica.nautilus.1.0.0-pre.37.nupkg.sha512",
+    "/Users/coltwiedermann/.nuget/packages/subnautica.nautilus/1.0.0-pre.38/subnautica.nautilus.1.0.0-pre.38.nupkg.sha512",
     "/Users/coltwiedermann/.nuget/packages/unityengine.modules/2019.4.36/unityengine.modules.2019.4.36.nupkg.sha512"
   ],
   "logs": []

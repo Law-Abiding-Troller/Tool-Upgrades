@@ -11,7 +11,7 @@
           "lib/net35/BepInEx.dll": {}
         },
         "runtime": {
-          "lib/net35/_._": {}
+          "lib/net35/BepInEx.dll": {}
         }
       },
       "BepInEx.Core/5.4.21": {
@@ -47,7 +47,7 @@
           }
         },
         "runtime": {
-          "lib/net45/_._": {
+          "lib/net45/0Harmony.dll": {
             "related": ".xml"
           }
         }
@@ -81,7 +81,16 @@
           }
         },
         "runtime": {
-          "lib/net40/_._": {
+          "lib/net40/Mono.Cecil.Mdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/net40/Mono.Cecil.Pdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/net40/Mono.Cecil.Rocks.dll": {
+            "related": ".pdb"
+          },
+          "lib/net40/Mono.Cecil.dll": {
             "related": ".Mdb.pdb;.pdb;.Pdb.pdb;.Rocks.pdb"
           }
         }
@@ -92,13 +101,16 @@
           "Mono.Cecil": "0.11.4",
           "MonoMod.Utils": "21.12.13.1"
         },
+        "frameworkAssemblies": [
+          "System"
+        ],
         "compile": {
           "lib/net452/MonoMod.RuntimeDetour.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/_._": {
+          "lib/net452/MonoMod.RuntimeDetour.dll": {
             "related": ".xml"
           }
         }
@@ -108,13 +120,16 @@
         "dependencies": {
           "Mono.Cecil": "0.11.4"
         },
+        "frameworkAssemblies": [
+          "System"
+        ],
         "compile": {
           "lib/net452/MonoMod.Utils.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/_._": {
+          "lib/net452/MonoMod.Utils.dll": {
             "related": ".xml"
           }
         }
@@ -166,10 +181,32 @@
           "lib/net472/UnityEngine.UI.dll": {}
         },
         "runtime": {
-          "lib/net472/_._": {}
+          "lib/net472/Assembly-CSharp-firstpass.dll": {},
+          "lib/net472/Assembly-CSharp.dll": {},
+          "lib/net472/FMODUnity.dll": {},
+          "lib/net472/Sentry.dll": {},
+          "lib/net472/UWE.EditorModifications.dll": {},
+          "lib/net472/Unity.Addressables.dll": {},
+          "lib/net472/Unity.Burst.Cecil.Mdb.dll": {},
+          "lib/net472/Unity.Burst.Cecil.Pdb.dll": {},
+          "lib/net472/Unity.Burst.Cecil.Rocks.dll": {},
+          "lib/net472/Unity.Burst.Cecil.dll": {},
+          "lib/net472/Unity.Burst.Unsafe.dll": {},
+          "lib/net472/Unity.Burst.dll": {},
+          "lib/net472/Unity.Collections.dll": {},
+          "lib/net472/Unity.Formats.Fbx.Runtime.dll": {},
+          "lib/net472/Unity.InternalAPIEngineBridge.001.dll": {},
+          "lib/net472/Unity.Mathematics.dll": {},
+          "lib/net472/Unity.MemoryProfiler.dll": {},
+          "lib/net472/Unity.Recorder.dll": {},
+          "lib/net472/Unity.ResourceManager.dll": {},
+          "lib/net472/Unity.ScriptableBuildPipeline.dll": {},
+          "lib/net472/Unity.TextMeshPro.dll": {},
+          "lib/net472/Unity.Timeline.dll": {},
+          "lib/net472/UnityEngine.UI.dll": {}
         }
       },
-      "Subnautica.Nautilus/1.0.0-pre.37": {
+      "Subnautica.Nautilus/1.0.0-pre.38": {
         "type": "package",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
@@ -183,7 +220,7 @@
           }
         },
         "runtime": {
-          "lib/net472/_._": {
+          "lib/net472/Nautilus.dll": {
             "related": ".xml"
           }
         }
@@ -892,17 +929,17 @@
         "subnautica.gamelibs.nuspec"
       ]
     },
-    "Subnautica.Nautilus/1.0.0-pre.37": {
-      "sha512": "WxQ85GOK+TW8hXySMGsRE6BBYN9r3cNlKFBhgA430IRL5GNfYFuwXykwslkMXP41r9ZzJ1YWI08lHbGepTdPOw==",
+    "Subnautica.Nautilus/1.0.0-pre.38": {
+      "sha512": "h4Uu9GLH0afs2BPce77Z0m9GzF8huqYSNCkU7yUmsB11iXS3Fv6QI84elwJEbBwcIbkg33oGODs5KV9DK8Wk/g==",
       "type": "package",
-      "path": "subnautica.nautilus/1.0.0-pre.37",
+      "path": "subnautica.nautilus/1.0.0-pre.38",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net472/Nautilus.dll",
         "lib/net472/Nautilus.xml",
         "logo.png",
-        "subnautica.nautilus.1.0.0-pre.37.nupkg.sha512",
+        "subnautica.nautilus.1.0.0-pre.38.nupkg.sha512",
         "subnautica.nautilus.nuspec"
       ]
     },
@@ -1105,7 +1142,7 @@
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.2",
       "PolySharp >= 1.13.1",
       "Subnautica.GameLibs >= 71288.0.0-r.0",
-      "Subnautica.Nautilus >= 1.0.0-pre.37",
+      "Subnautica.Nautilus >= 1.*-*",
       "UnityEngine.Modules >= 2019.4.36"
     ]
   },
@@ -1115,11 +1152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
-      "projectName": "UpgradesLIB",
-      "projectPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
+      "projectUniqueName": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/ToolsUpgrades.csproj",
+      "projectName": "ToolsUpgrades",
+      "projectPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/ToolsUpgrades.csproj",
       "packagesPath": "/Users/coltwiedermann/.nuget/packages/",
-      "outputPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/obj/",
+      "outputPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/coltwiedermann/.nuget/NuGet/NuGet.Config"
@@ -1155,41 +1192,35 @@
         "targetAlias": "net472",
         "dependencies": {
           "BepInEx.Analyzers": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[1.*, )"
           },
           "BepInEx.Core": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[5.4.21, )"
           },
           "BepInEx.PluginInfoProps": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[1.1.0, )"
           },
           "Microsoft.NETFramework.ReferenceAssemblies": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[1.0.2, )"
           },
           "PolySharp": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[1.13.1, )"
           },
           "Subnautica.GameLibs": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[71288.0.0-r.0, )"
           },
           "Subnautica.Nautilus": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[1.0.0-pre.37, )"
+            "version": "[1.*-*, )"
           },
           "UnityEngine.Modules": {
             "include": "Compile",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj": {}
+    "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/ToolsUpgrades.csproj": {}
   },
   "projects": {
-    "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj": {
+    "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/ToolsUpgrades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
-        "projectName": "UpgradesLIB",
-        "projectPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
+        "projectUniqueName": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/ToolsUpgrades.csproj",
+        "projectName": "ToolsUpgrades",
+        "projectPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/ToolsUpgrades.csproj",
         "packagesPath": "/Users/coltwiedermann/.nuget/packages/",
-        "outputPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/obj/",
+        "outputPath": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgrades/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/coltwiedermann/.nuget/NuGet/NuGet.Config"
@@ -47,41 +47,35 @@
           "targetAlias": "net472",
           "dependencies": {
             "BepInEx.Analyzers": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.*, )"
             },
             "BepInEx.Core": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[5.4.21, )"
             },
             "BepInEx.PluginInfoProps": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[1.1.0, )"
             },
             "Microsoft.NETFramework.ReferenceAssemblies": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.0.2, )"
             },
             "PolySharp": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[1.13.1, )"
             },
             "Subnautica.GameLibs": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[71288.0.0-r.0, )"
             },
             "Subnautica.Nautilus": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.0.0-pre.37, )"
+              "version": "[1.*-*, )"
             },
             "UnityEngine.Modules": {
               "include": "Compile",
