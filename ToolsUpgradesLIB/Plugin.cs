@@ -68,7 +68,7 @@ public class Plugin : BaseUnityPlugin
         // Initialize custom prefabs
         InitializePrefabs();
         
-        ModMessageSystem.SendGlobal("FindMyUpdates","");
+        ModMessageSystem.SendGlobal("FindMyUpdates","https://raw.githubusercontent.com/Law-Abiding-Troller/Tool-Upgrades/refs/heads/main/ToolsUpgradesLIB/Version.json");
         
         Logger.LogInfo("Initializing mod options");
         ConfigOptions = OptionsPanelHandler.RegisterModOptions<Config>();

@@ -4,6 +4,6 @@ namespace ToolsUpgradesLIB
     {
         public const string PLUGIN_GUID = "com.lawabidingmodder.upgradeslib";
         public const string PLUGIN_NAME = "UpgradesLIB";
-        public const string PLUGIN_VERSION = "1.0.0";
+        public const string PLUGIN_VERSION = "1.1.1";
     }
 }
