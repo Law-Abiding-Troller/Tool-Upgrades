@@ -6,6 +6,7 @@ using BepInEx.Logging;
 using HarmonyLib;
 using Nautilus.Handlers;
 using Nautilus.Utility;
+using Nautilus.Utility.ModMessages;
 using UpgradesLIB.Items.Equipment;
 using UnityEngine;
 using PluginInfo = ToolsUpgradesLIB.PluginInfo;
@@ -66,6 +67,8 @@ public class Plugin : BaseUnityPlugin
         
         // Initialize custom prefabs
         InitializePrefabs();
+        
+        ModMessageSystem.SendGlobal("FindMyUpdates","");
         
         Logger.LogInfo("Initializing mod options");
         ConfigOptions = OptionsPanelHandler.RegisterModOptions<Config>();
