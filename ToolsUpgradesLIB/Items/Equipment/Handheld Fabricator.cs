@@ -110,6 +110,13 @@ public class HandHeldFabricator : PlayerTool
     {
         gameObject.transform.localScale = Handheldprefab.PostScaleValue;
     }
+
+    public override void OnDraw(Player p)
+    {
+        base.OnDraw(p);
+        if (fab.animator == null) return;
+        fab.animator.SetBool(AnimatorHashID.open_fabricator, fab.state);
+    }
 }
 
 public class HandHeldRelay : PowerRelay
