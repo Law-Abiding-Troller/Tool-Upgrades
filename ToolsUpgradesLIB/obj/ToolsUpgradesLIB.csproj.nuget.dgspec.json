@@ -5,7 +5,7 @@
   },
   "projects": {
     "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj": {
-      "version": "1.0.0",
+      "version": "1.1.2",
       "restore": {
         "projectUniqueName": "/Users/coltwiedermann/Documents/GitHub/Tool-Upgrades/ToolsUpgradesLIB/ToolsUpgradesLIB.csproj",
         "projectName": "UpgradesLIB",
@@ -73,15 +73,10 @@
               "target": "Package",
               "version": "[1.13.1, )"
             },
-            "Subnautica.GameLibs": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "target": "Package",
-              "version": "[71288.0.0-r.0, )"
-            },
             "Subnautica.Nautilus": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[1.0.0-pre.37, )"
+              "version": "[1.0.0-pre.43, )"
             },
             "UnityEngine.Modules": {
               "include": "Compile",

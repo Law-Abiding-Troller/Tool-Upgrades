@@ -60,11 +60,11 @@ public class Handheldprefab
         Handheldfab.SetRecipe(new Nautilus.Crafting.RecipeData()
             {
                 craftAmount = 1,
-                Ingredients = new List<CraftData.Ingredient>()
+                Ingredients = new List<Ingredient>()
                 {
                     new(TechType.Titanium, 2),
-                    new(TechType.Battery),
-                    new(TechType.Copper),
+                    new(TechType.Battery,1),
+                    new(TechType.Copper,1),
                     new(TechType.JeweledDiskPiece, 2)
                     
                 }
