@@ -53,11 +53,10 @@ public class Plugin : BaseUnityPlugin
             preventDeconstuctionIfNotEmpty); //use nautilus's method to create the storage container
         Logger.LogInfo("Storage Container Added. If it opens, the task was successful");//log it
     }
-    public static TechGroup toolupgrademodules = EnumHandler.AddEntry<TechGroup>("ToolsUpgrades")
-        .WithPdaInfo("Tools Upgrade Modules");
-    public static TechGroup equipmentupgrademodules = EnumHandler.AddEntry<TechGroup>("EquipmentUpgrades")
-        .WithPdaInfo("Equipment Upgrade Modules");
-    public static TechCategory upgradelib = EnumHandler.AddEntry<TechCategory>("UpgradesLIB").WithPdaInfo("UpgradesLIB").RegisterToTechGroup(equipmentupgrademodules);
+
+    public static TechGroup toolupgrademodules;
+    public static TechGroup equipmentupgrademodules;
+    public static TechCategory upgradelib;
     public void Awake()
     {
         // set project-scoped logger instance
@@ -67,6 +66,14 @@ public class Plugin : BaseUnityPlugin
         
         // Initialize custom prefabs
         InitializePrefabs();
+        
+        // Register Tech
+        toolupgrademodules = EnumHandler.AddEntry<TechGroup>("EquipmentUpgrades")
+            .WithPdaInfo("Equipment Upgrade Modules");
+        upgradelib = EnumHandler.AddEntry<TechCategory>("UpgradesLIB").WithPdaInfo("UpgradesLIB")
+            .RegisterToTechGroup(equipmentupgrademodules);
+        equipmentupgrademodules= EnumHandler.AddEntry<TechGroup>("EquipmentUpgrades")
+            .WithPdaInfo("Equipment Upgrade Modules");
         
         ModMessageSystem.SendGlobal("FindMyUpdates","https://raw.githubusercontent.com/Law-Abiding-Troller/Tool-Upgrades/refs/heads/main/ToolsUpgradesLIB/Version.json");
         
