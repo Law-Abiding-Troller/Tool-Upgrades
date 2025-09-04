@@ -68,7 +68,7 @@ public class Plugin : BaseUnityPlugin
         InitializePrefabs();
         
         // Register Tech
-        toolupgrademodules = EnumHandler.AddEntry<TechGroup>("EquipmentUpgrades")
+        toolupgrademodules = EnumHandler.AddEntry<TechGroup>("Equipment Upgrades")
             .WithPdaInfo("Equipment Upgrade Modules");
         upgradelib = EnumHandler.AddEntry<TechCategory>("UpgradesLIB").WithPdaInfo("UpgradesLIB")
             .RegisterToTechGroup(equipmentupgrademodules);
@@ -79,6 +79,7 @@ public class Plugin : BaseUnityPlugin
         
         Logger.LogInfo("Initializing mod options");
         ConfigOptions = OptionsPanelHandler.RegisterModOptions<Config>();
+        UpgradesLIB.Config.debugMode = ConfigOptions.DebugMode;
         
         Logger.LogInfo("Methods are the following: ");
         Logger.LogInfo("(Coroutine) CreateUpgradesContainer(TechType (the TechType to operate on), string (name), string (what you actually refer to for differences), int (width), int (height)), TechType[] (what you want to be the allowed tech, not required), bool (Prevent deconstruction if not empty, not required)");
@@ -92,6 +93,13 @@ public class Plugin : BaseUnityPlugin
         // register harmony patches, if there are any
         Harmony.CreateAndPatchAll(Assembly, $"{PluginInfo.PLUGIN_NAME}");
         Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_NAME} is loaded! Loading other plugins." );
+    }
+
+    private int timer = 0;
+    public void Update()
+    {
+        timer++;
+        if (ConfigOptions.DebugMode) Logger.LogDebug("Timer: 1");
     }
 
     private void InitializePrefabs()
